@@ -15,14 +15,14 @@ with
 
 built inside a Ubuntu 18.04 chroot to make it portable
 
-Binutils 2.38 is provded with
+Binutils 2.38 is patched against Linux and MinGW-w64 patches and is provided with
 
-- GNP: 6.3.0
+- GMP: 6.3.0
 - MPC: 1.3.1
 - MPFR: 4.2.1
 - ISL: 0.22.1
 
-Gcc 11.5.0 is provided with
+Gcc 11.5.0 is patched against Linux and MinGW-w64 patches and is provided with
 
 - GMP: repo = https://gmplib.org/repo/gmp/, changeset = 18494:7ff7050d24e
 - MPC: repo = https://github.com/BrianGladman/mpc.git, commit = d34d34127794cbbd7f24f58d175fa139172c1644

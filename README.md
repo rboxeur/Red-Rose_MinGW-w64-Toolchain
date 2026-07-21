@@ -12,8 +12,27 @@ with
 - Thread model: posix
 - Ucrt instead of msvcrt
 - target architectures: 32 Bits and 64 Bits
+- all binairies are built statically
 
 built inside a Ubuntu 18.04 chroot to make it portable
+
+## How to use
+
+Download and decompress the tarball
+
+```bash
+release=14.0.0.r220.gd999af622
+curl https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain/releases/download/${release}/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz --output Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz
+sudo tar xf Red-Rose-MinGW-w64-Posix-Ucrt-v14.0.0.r220.gd999af622-Gcc-11.5.0.tar.xz -C /
+```
+Point to its binairies by modifying your PATH environment variable
+
+```bash
+export release=14.0.0.r220.gd999af622
+export PATH=/opt/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0/bin/:${PATH}
+```
+
+## Information regarding  Binutils 2.38 and Gcc 11.5.0
 
 Binutils 2.38 is patched against Linux and MinGW-w64 patches and is provided with
 

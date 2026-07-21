@@ -36,14 +36,14 @@ export PATH=/opt/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0/bin/:${PAT
 
 ## Information regarding  Binutils 2.38 and Gcc 11.5.0
 
-Binutils 2.38 is patched against Linux and MinGW-w64 patches and is provided with
+Binutils 2.38 is patched against Linux and MinGW-w64 patches and is provided with original packages
 
 - GMP: 6.3.0
 - MPC: 1.3.1
 - MPFR: 4.2.1
 - ISL: 0.22.1
 
-Gcc 11.5.0 is patched against Linux and MinGW-w64 patches and is provided with
+Gcc 11.5.0 is patched against Linux and MinGW-w64 patches and is provided with fresh packages
 
 - GMP: repo = https://gmplib.org/repo/gmp/, changeset = 18494:7ff7050d24e
 - MPC: repo = https://github.com/BrianGladman/mpc.git, commit = d34d34127794cbbd7f24f58d175fa139172c1644

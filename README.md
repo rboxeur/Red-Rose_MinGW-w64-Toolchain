@@ -112,7 +112,7 @@ gcc -### -E - -march=native 2>&1 | sed -r '/cc1/!d;s/(")|(^.* - )|( -mno-[^\ ]+)
 
 ### 5. Prepare the toolchain and build it.
 
-- Copy folder ``sources`` and script ``build-mingw-w64-toolchain-inside-chroot.sh``
+- Copy folder ``sources`` and script ``build-mingw-w64-toolchain-inside-chroot.sh`` inside your chroot location (inside root subfolder)
 
 ```
 sudo cp -rf sources /opt/chroots/bionic64_chroot_mingw-w64/root/

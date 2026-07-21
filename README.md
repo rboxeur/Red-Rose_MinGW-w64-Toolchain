@@ -64,7 +64,7 @@ Based on your needs, you need fron 7.0 GB to 8.00 GB as free space to build the 
 git clone https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain.git
 ```
 
-### 2. Prepare the environment based on your own needs and the target CPU host
+### 2. Prepare the environment based on your own needs and the target CPU host and location of your chroot (optional)
 - Edit the file ``create_ubuntu_18.04_bootstraps_mingw-w64.sh`` using your favorite text editor (nano, vim...)
 - Replace this line
 
@@ -72,11 +72,11 @@ git clone https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain.git
 export MAINDIR=/opt/chroots
 ```
 
-by your own choice (replace `/opt/chroot` by another location if needed). 
+by your own choice (replace `/opt/chroot` by another location if needed). If this loation does not exist then the script will create it for you.
 
 This is the target folder where your Ubuntu 18.04 chroot will be located. Keep it as it if it's ok for you
 
-Pay attention that if you modified this script then you have to do the same for  ``chroot-on-bionic64-mingw-w64.sh``
+Pay attention that if you modified this locationthen you have to do the same for  ``chroot-on-bionic64-mingw-w64.sh``
 
 ```bash
 export CHROOT_PATH="/opt/chroots/bionic64_chroot_mingw-w64"

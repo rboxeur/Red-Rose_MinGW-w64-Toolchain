@@ -72,7 +72,9 @@ git clone https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain.git
 export MAINDIR=/opt/chroots
 ```
 
-by your own choice. This is the target folder where your Ubuntu 18.04 chroot will be located. Keep it as it if it's ok for you
+by your own choice (replace `/opt/chroot` by another location if needed). 
+
+This is the target folder where your Ubuntu 18.04 chroot will be located. Keep it as it if it's ok for you
 
 Pay attention that if you modified this script then you have to do the same for  ``chroot-on-bionic64-mingw-w64.sh``
 

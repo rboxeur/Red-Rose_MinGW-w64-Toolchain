@@ -22,7 +22,7 @@ Download and decompress the tarball
 
 ```bash
 release=14.0.0.r220.gd999af622
-curl https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain/releases/download/${release}/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz --output Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz
+wget https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain/releases/download/${release}/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz
 sudo tar xf Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz -C /
 ```
 Point to its binairies by modifying your PATH environment variable

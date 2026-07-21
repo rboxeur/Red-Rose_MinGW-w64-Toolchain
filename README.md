@@ -3,9 +3,9 @@
 ## About
 Experimental Canadian Cross-Compilation Toolchain on linux
 
-- Gcc: 11.50 already patched
-- Binutils: 2.38 already patched
-- MinGW-w64: git -- refreshed base on Wine upstream
+- Gcc: version = 11.50 already patched
+- Binutils: version = 2.38 already patched
+- MinGW-w64: version = 14.0.0.r220.gd999af622, commit = d999af62247693a8b5b25a98d67316c8bb2dcd37 refreshed base on Wine upstream
 
 with
 
@@ -14,4 +14,18 @@ with
 - target architectures: 32 Bits and 64 Bits
 
 built inside a Ubuntu 18.04 chroot to make it portable
+
+Binutils 2.38 is provded with
+
+- GNP: 6.3.0
+- MPC: 1.3.1
+- MPFR: 4.2.1
+- ISL: 0.22.1
+
+Gcc 11.5.0 is provided with
+
+- GMP: repo = https://gmplib.org/repo/gmp/, changeset = 18494:7ff7050d24e
+- MPC: repo = https://github.com/BrianGladman/mpc.git, commit = d34d34127794cbbd7f24f58d175fa139172c1644
+- MPFR: repo = https://gitlab.inria.fr/mpfr/mpfr.git, commit = 94e041204f1f997ad76e8e5e53ea022ac484b67a
+- ISL: repo = https://github.com/Meinersbur/isl.git, commit = dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3
 

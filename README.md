@@ -64,7 +64,7 @@ Based on your needs, you need fron 7.0 GB to 8.00 GB as free space to build the 
 git clone https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain.git
 ```
 
-### Prepare the environment based on your own needs and the target CPU host
+### 2. Prepare the environment based on your own needs and the target CPU host
 - Edit the file ``create_ubuntu_18.04_bootstraps_mingw-w64.sh`` using your favorite text editor (nano, vim...)
 - Replace this line
 
@@ -100,6 +100,8 @@ export OPTIMIZE_FLAGS="..."
 sudo cp -rf sources /opt/chroots/bionic64_chroot_mingw-w64/root/
 sudo cp build-mingw-w64-toolchain-inside-chroot.sh /opt/chroots/bionic64_chroot_mingw-w64/root/
 ```
+
+### 3. Build your own toolchain
 
 - Launch the script ``chroot-on-bionic64-mingw-w64.sh``
 

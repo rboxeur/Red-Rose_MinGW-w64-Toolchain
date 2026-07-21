@@ -50,3 +50,4 @@ Gcc 11.5.0 is patched against Linux and MinGW-w64 patches and is provided with f
 - MPFR: repo = https://gitlab.inria.fr/mpfr/mpfr.git, commit = 94e041204f1f997ad76e8e5e53ea022ac484b67a
 - ISL: repo = https://github.com/Meinersbur/isl.git, commit = dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3
 
+Some headers files (.h) for packages are refreshed too.

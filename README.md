@@ -1,5 +1,7 @@
 # Red-Rose_MinGW-w64-Toolchain
 
+This is the MinGW-w64 Toolchain I use to build Wine inside my 2 chroots (32 Bits and 64 Bits).
+
 ## About
 Experimental Canadian Cross-Compilation Toolchain on linux
 

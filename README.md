@@ -64,7 +64,7 @@ Based on your needs, you need fron 7.0 GB to 8.00 GB as free space to build the 
 git clone https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain.git
 ```
 
-### 2. Prepare the environment based on your own needs and the target CPU host and location of your chroot (optional)
+### 2. Location of your chroot (optional)
 - Edit the file ``create_ubuntu_18.04_bootstraps_mingw-w64.sh`` using your favorite text editor (nano, vim...)
 - Replace this line
 
@@ -82,28 +82,42 @@ Pay attention that if you modified this locationthen you have to do the same for
 export CHROOT_PATH="/opt/chroots/bionic64_chroot_mingw-w64"
 ```
 
-- Save your choice and lauch it
+- Save your choices
+
+### 3. Create the chroot
 
 ``` bash
 sudo chmod +x create_ubuntu_18.04_bootstraps_mingw-w64.sh
 sudo ./create_ubuntu_18.04_bootstraps_mingw-w64.sh
 ```
 
-- Once chroot is ready then 
+You chroot is now ready.
+
+### 4. Flags for your CPU host
+ 
 - Edit the file ``build-mingw-w64-toolchain-inside-chroot.sh`` and replace the line with your own CPU flags.
 
 ```bash
 export OPTIMIZE_FLAGS="..."
 ```
+If you need some idea about what to put then you could use this command
+
+```bash
+gcc -### -E - -march=native 2>&1 | sed -r '/cc1/!d;s/(")|(^.* - )|( -mno-[^\ ]+)//g'
+```
+
+- Usually I remove all flags like ``-fstack-clash-protection -fcf-protection`` and copy-paste what command above returns to me
+
 - Save your changes.
+
+### 5. Prepare the toolchain and build it.
+
 - Copy folder ``sources`` and script ``build-mingw-w64-toolchain-inside-chroot.sh``
 
 ```
 sudo cp -rf sources /opt/chroots/bionic64_chroot_mingw-w64/root/
 sudo cp build-mingw-w64-toolchain-inside-chroot.sh /opt/chroots/bionic64_chroot_mingw-w64/root/
 ```
-
-### 3. Build your own toolchain
 
 - Launch the script ``chroot-on-bionic64-mingw-w64.sh``
 

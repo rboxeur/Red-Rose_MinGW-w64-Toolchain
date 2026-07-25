@@ -37,7 +37,7 @@ export PATH=/opt/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0/bin/:${PAT
 ## Information regarding  Binutils 2.38 and Gcc 11.5.0
 
 ### Binutils 2.38
-Binutils 2.38 is patched against Linux and MinGW-w64 patches and is provided with original packages
+Binutils 2.38 is patched against both Linux and MinGW-w64 patches and is provided with original packages
 
 - GMP: 6.3.0
 - MPC: 1.3.1
@@ -45,12 +45,14 @@ Binutils 2.38 is patched against Linux and MinGW-w64 patches and is provided wit
 - ISL: 0.22.1
 
 ### Gcc 11.5.0
-Gcc 11.5.0 is patched against Linux and MinGW-w64 patches and is provided with fresh packages
+Gcc 11.5.0 is patched against both Linux and MinGW-w64 patches and is provided with fresh packages
 
-- GMP: repo = https://gmplib.org/repo/gmp/, changeset = 18494:7ff7050d24e
-- MPC: repo = https://github.com/BrianGladman/mpc.git, commit = d34d34127794cbbd7f24f58d175fa139172c1644
-- MPFR: repo = https://gitlab.inria.fr/mpfr/mpfr.git, commit = 94e041204f1f997ad76e8e5e53ea022ac484b67a
-- ISL: repo = https://github.com/Meinersbur/isl.git, commit = dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3
+| Package | URL Repository | Changeset/Commit |
+|:--------|:----|:-----------------|
+| GMP     | https://gmplib.org/repo/gmp/| 18494:7ff7050d24e |
+| MPC     | https://github.com/BrianGladman/mpc.git | d34d34127794cbbd7f24f58d175fa139172c1644 |
+| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | 94e041204f1f997ad76e8e5e53ea022ac484b67a |
+|ISL      | https://github.com/Meinersbur/isl.git | dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3 |
 
 Some headers files (.h) for packages are refreshed too.
 

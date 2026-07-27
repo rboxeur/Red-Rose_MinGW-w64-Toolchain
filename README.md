@@ -7,7 +7,7 @@ Experimental Canadian Cross-Compilation Toolchain on linux
 
 - Gcc: version = 11.50 already patched
 - Binutils: version = 2.38 already patched
-- MinGW-w64: version = 14.0.0.r220.gd999af622, commit = d999af62247693a8b5b25a98d67316c8bb2dcd37 refreshed base on Wine upstream
+- MinGW-w64: version = 14.0.0.r238.ge51e30769, commit = e51e30769e86aad6a2adee37535187f4981b279a refreshed against [Wine-TkG 11.14](https://github.com/Kron4ek/wine-tkg)
 
 with
 

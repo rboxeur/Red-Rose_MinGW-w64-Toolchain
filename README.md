@@ -51,7 +51,7 @@ Gcc 11.5.0 is patched against both Linux and MinGW-w64 patches and is provided w
 |:--------|:----|:-----------------|
 | GMP     | https://gmplib.org/repo/gmp/| 18494:7ff7050d24e |
 | MPC     | https://github.com/BrianGladman/mpc.git | d34d34127794cbbd7f24f58d175fa139172c1644 |
-| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | 94e041204f1f997ad76e8e5e53ea022ac484b67a |
+| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | 1694bfe20db59ff5bf1cad56adb40c2dc1709fc8 |
 |ISL      | https://github.com/Meinersbur/isl.git | dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3 |
 
 Some headers files (.h) for packages are refreshed too.

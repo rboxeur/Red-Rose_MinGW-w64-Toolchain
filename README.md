@@ -127,7 +127,7 @@ Now you are inside the chroot and ready to build the toolchain
 
 ```bash
 
-release=$(grep ^MINGW_W64_PKGVER build-mingw-w64-toolchain-inside-chroot.sh | awk -F '=' '{print $NF;}'|sed -e "s:\"::g")
+release=$(grep ^MINGW_W64_PKGVER /root/build-mingw-w64-toolchain-inside-chroot.sh | awk -F '=' '{print $NF;}'|sed -e "s:\"::g")
 
 cd
 
@@ -141,7 +141,7 @@ Based on your CPU this step could take some times!!!
 Your toolchain is ready. Optionaly you could compress it
 
 ```bash
-release=$(grep ^MINGW_W64_PKGVER build-mingw-w64-toolchain-inside-chroot.sh | awk -F '=' '{print $NF;}'|sed -e "s:\"::g")
+release=$(grep ^MINGW_W64_PKGVER /root/build-mingw-w64-toolchain-inside-chroot.sh | awk -F '=' '{print $NF;}'|sed -e "s:\"::g")
 
 cd
 

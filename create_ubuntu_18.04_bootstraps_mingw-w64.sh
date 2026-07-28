@@ -91,10 +91,27 @@ function install_buildenv() {
 	add-apt-repository -y ppa:cybermax-dexter/mingw-w64-backport
 	apt-get update
 	apt-get -y install ccache gcc-11 g++-11 wget git gcc-mingw-w64 g++-mingw-w64 vim m4 texinfo bison flex make zlib1g-dev autoconf libzstd-dev automake libtool time
-	update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-11 11 --slave /usr/bin/g++ g++ /usr/bin/g++-11 --slave /usr/bin/gcov gcov /usr/bin/gcov-11
-	ln -s /usr/bin/gcc-ar-11 /usr/bin/gcc-ar
-	ln -s /usr/bin/gcc-ranlib-11 /usr/bin/gcc-ranlib
-	ln -s /usr/bin/gcc-nm-11 /usr/bin/gcc-nm
+
+	vers=11; update-alternatives \
+  	--install /usr/bin/gcc gcc /usr/bin/gcc-"\${vers}" "\${vers}"0 \
+  	--slave /usr/bin/x86_64-linux-gnu-gcc x86_64-linux-gnu-gcc /usr/bin/x86_64-linux-gnu-gcc-"\${vers}" \
+  	--slave /usr/bin/g++ g++ /usr/bin/g++-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-g++ x86_64-linux-gnu-g++ /usr/bin/x86_64-linux-gnu-g++-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-cpp x86_64-linux-gnu-cpp /usr/bin/x86_64-linux-gnu-cpp-"\${vers}" \
+  	--slave /usr/bin/gcc-ar gcc-ar /usr/bin/gcc-ar-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-gcc-ar x86_64-linux-gnu-gcc-ar /usr/bin/x86_64-linux-gnu-gcc-ar-"\${vers}" \
+  	--slave /usr/bin/gcc-nm gcc-nm /usr/bin/gcc-nm-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-gcc-nm x86_64-linux-gnu-gcc-nm /usr/bin/x86_64-linux-gnu-gcc-nm-"\${vers}" \
+  	--slave /usr/bin/gcc-ranlib gcc-ranlib /usr/bin/gcc-ranlib-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-gcc-ranlib x86_64-linux-gnu-gcc-ranlib /usr/bin/x86_64-linux-gnu-gcc-ranlib-"\${vers}" \
+  	--slave /usr/bin/gcov gcov /usr/bin/gcov-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-gcov x86_64-linux-gnu-gcov /usr/bin/x86_64-linux-gnu-gcov-"\${vers}" \
+  	--slave /usr/bin/gcov-dump gcov-dump /usr/bin/gcov-dump-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-gcov-dump x86_64-linux-gnu-gcov-dump /usr/bin/x86_64-linux-gnu-gcov-dump-"\${vers}" \
+  	--slave /usr/bin/gcov-tool gcov-tool /usr/bin/gcov-tool-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-gcov-tool x86_64-linux-gnu-gcov-tool /usr/bin/x86_64-linux-gnu-gcov-tool-"\${vers}" \
+  	--slave /usr/bin/lto-dump lto-dump /usr/bin/lto-dump-"\${vers}" \
+  	--slave /usr/bin/x86_64-linux-gnu-lto-dump x86_64-linux-gnu-lto-dump /usr/bin/x86_64-linux-gnu-lto-dump-"\${vers}"
 }
 
 install_buildenv

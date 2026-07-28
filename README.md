@@ -23,14 +23,14 @@ built inside a Ubuntu 18.04 chroot to make it portable
 Download and decompress the tarball
 
 ```bash
-release=14.0.0.r220.gd999af622
+release=14.0.0.r238.ge51e30769
 wget https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain/releases/download/${release}/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz
 sudo tar xf Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz -C /
 ```
 Point to its binairies by modifying your PATH environment variable
 
 ```bash
-export release=14.0.0.r220.gd999af622
+export release=14.0.0.r238.ge51e30769
 export PATH=/opt/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0/bin/:${PATH}
 ```
 

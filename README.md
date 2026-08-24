@@ -7,7 +7,7 @@ Experimental Canadian Cross-Compilation Toolchain on linux
 
 - Gcc: version = 11.50 already patched
 - Binutils: version = 2.38 already patched
-- MinGW-w64: version = 14.0.0.r262.g5ea8e9fac, commit = 5ea8e9facd013b815f5f29f20ef26a566319a3de refreshed against [Wine 11.15](https://gitlab.winehq.org/wine/wine/-/releases/wine-11.15)
+- MinGW-w64: version = 14.0.0.r302.gd7f3c5201, commit = d7f3c52012c4af4fb526330117d9c86b266018dc refreshed against [Wine 11.16](https://gitlab.winehq.org/wine/wine/-/releases/wine-11.16)
 
 with
 
@@ -23,14 +23,14 @@ built inside a Ubuntu 18.04 chroot to make it portable
 Download and decompress the tarball
 
 ```bash
-release=14.0.0.r262.g5ea8e9fac
+release=14.0.0.r302.gd7f3c5201
 wget https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain/releases/download/${release}/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz
 sudo tar xf Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz -C /
 ```
 Point to its binairies by modifying your PATH environment variable
 
 ```bash
-export release=14.0.0.r262.g5ea8e9fac
+export release=14.0.0.r302.gd7f3c5201
 export PATH=/opt/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0/bin/:${PATH}
 ```
 
@@ -51,7 +51,7 @@ Gcc 11.5.0 is patched against both Linux and MinGW-w64 patches and is provided w
 |:--------|:----|:-----------------|
 | GMP     | https://gmplib.org/repo/gmp/| 18494:7ff7050d24e |
 | MPC     | https://github.com/BrianGladman/mpc.git | d34d34127794cbbd7f24f58d175fa139172c1644 |
-| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | 71aa862d15fd7a6096fa4bd295f282901d7fc0e2 |
+| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | b4fe16db933e744f3a1df0fe891f870364ce1f69 |
 |ISL      | https://github.com/Meinersbur/isl.git | dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3 |
 
 Some headers files (.h) for packages are refreshed too.

@@ -151,7 +151,7 @@ function build_arch {
                     --enable-wildcard \
                     --enable-private-exports \
                     --enable-delay-import-libs \
-                    --enable-experimental=all,dfp,printf128,registeredprintf \
+                    --enable-experimental=all,dfp,printf128 \
                     --with-default-msvcrt=ucrt \
                     --enable-tests-unicode \
                     $MINGW_W64_CRT_EXTRA_CONFIGURE

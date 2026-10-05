@@ -16,7 +16,11 @@ with
 - target architectures: 32 Bits and 64 Bits
 - all binairies are built statically
 
-built inside a Ubuntu 18.04 chroot to make it portable
+built inside a Ubuntu 18.04 chroot to make it portable.
+
+- Machine A: Host => Laptop Latitude E6540 with CPU i7-4810MQ CPU @ 2.80GHz. Gcc/MinGW-W64 is built here inside the current chroot
+- Machine B: Build => This Gcc/MinGW-w64 release is copied into 2 chroots based [Kron4ek's chroots]on [https://github.com/Kron4ek/Wine-Builds]. Wine is built inside these 2 chroots.
+- Machine C: Target => Laptop Gaming Dell G5 SE 5505. Wine is copied and runs here to play native Windows games
 
 ## How to use
 

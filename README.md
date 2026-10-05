@@ -7,7 +7,7 @@ Experimental Canadian Cross-Compilation Toolchain on linux
 
 - Gcc: version = 11.5.0 already patched
 - Binutils: version = 2.38 already patched
-- MinGW-w64: version = 14.0.0.r420.g61d40c4c0, commit = [61d40c4c077b82ed2ad22640742bd01e3000e222](https://github.com/mingw-w64/mingw-w64/commit/61d40c4c077b82ed2ad22640742bd01e3000e222) refreshed against [Wine-TkG 11.18](https://github.com/Kron4ek/wine-tkg/releases/tag/11.18)
+- MinGW-w64: version = 14.0.0.r454.ga3d93999e, commit = [a3d93999ef0521681d45e445c39964a7af0f593f](https://github.com/mingw-w64/mingw-w64/commit/a3d93999ef0521681d45e445c39964a7af0f593f) refreshed against [Wine-TkG 11.19](https://github.com/Kron4ek/wine-tkg/releases/tag/11.19)
 
 with
 
@@ -23,14 +23,14 @@ built inside a Ubuntu 18.04 chroot to make it portable
 Download and decompress the tarball
 
 ```bash
-release=14.0.0.r420.g61d40c4c0
+release=14.0.0.r454.ga3d93999e
 wget https://github.com/rboxeur/Red-Rose_MinGW-w64-Toolchain/releases/download/${release}/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz
 sudo tar xf Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0.tar.xz -C /
 ```
 Point to its binairies by modifying your PATH environment variable
 
 ```bash
-export release=14.0.0.r420.g61d40c4c0
+export release=14.0.0.r454.ga3d93999e
 export PATH=/opt/Red-Rose-MinGW-w64-Posix-Ucrt-v${release}-Gcc-11.5.0/bin/:${PATH}
 ```
 
@@ -51,7 +51,7 @@ Gcc 11.5.0 is patched against both Linux and MinGW-w64 patches and is provided w
 |:--------|:----|:-----------------|
 | GMP     | https://gmplib.org/repo/gmp/| 18494:7ff7050d24e |
 | MPC     | https://github.com/BrianGladman/mpc.git | d34d34127794cbbd7f24f58d175fa139172c1644 |
-| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | 7bea490b1216f0a0767f9d85792bd0497f4550be |
+| MPFR    | https://gitlab.inria.fr/mpfr/mpfr.git | e7f184176a23805484d285a81e0d4a32a753d1a6 |
 |ISL      | https://github.com/Meinersbur/isl.git | dc16f8e3d62c9e808ef86ffe82c2b93ac1446da3 |
 
 Some headers files (.h) for packages are refreshed too.

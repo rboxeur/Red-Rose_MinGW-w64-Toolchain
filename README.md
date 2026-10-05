@@ -23,7 +23,7 @@ built inside a Ubuntu 18.04 chroot to make it portable.
 |-------|-------|-------|-------|
 | A       | Build  | Dell Laptop Latitude E6540 with CPU i7-4810MQ | Gcc/MinGW-W64 is built here inside the current chroot |
 | B       | Host   | Dell Laptop Latitude E6540 with CPU i7-4810MQ | This Gcc/MinGW-w64 release is copied into [2 chroots](https://github.com/rboxeur/red-rose-environment). Wine is built inside these 2 chroots |
-| C       | Target | Dell Laptop G5 SE 5505 | Wine is copied and runs here to play native Windows games |
+| C       | Target | Dell Laptop G5 SE 5505 with CPU Ryzen 5 4600H | Wine build is copied and runs here to play native Windows games |
 
 ## How to use
 
